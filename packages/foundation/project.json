@@ -23,6 +23,12 @@
           "packages/foundation/package.json"
         ]
       }
+    },
+    "release": {
+      "executor": "nx-release:build-update-publish",
+      "options": {
+        "libName": "foundation"
+      }
     }
   },
   "tags": []
