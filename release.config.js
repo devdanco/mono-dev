@@ -1,5 +1,5 @@
 module.exports = {
-  branches: ['main', { 'name': 'rc/*', 'channel': 'rc', 'prerelease': 'rc' }],
+  branches: ['main', {name: 'beta', prerelease: true}],
   preset: 'conventionalcommits',
   presetConfig: {
     types: [
