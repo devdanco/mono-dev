@@ -10,6 +10,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
+    "@goestav/nx-semantic-release": "^1.0.0",
     "@jscutlery/semver": "^3.1.0",
     "@nx/eslint-plugin": "16.8.1",
     "@nx/js": "16.8.1",
