@@ -1,3 +1,3 @@
 export function foundation(): string {
-  return 'foundation -awesome npm ahhhhhhhhh';
+  return "2";
 }
