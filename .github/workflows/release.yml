@@ -14,14 +14,11 @@ jobs:
         run: npx nx run-many -t lint
       - name: Test
         run: npx nx run-many -t test --configuration=ci
-      - name: Version
-        shell: bash
-        run: yarn nx affected --base=main --target=version
+
+      - name: Release
+        run: npx nx semantic-release:foundation
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Tag last-release
-        shell: bash
-        run: |
-          git tag -f main
-          git push origin main --force
+      

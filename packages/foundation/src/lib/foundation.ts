@@ -1,3 +1,3 @@
 export function foundation(): string {
-  return "4";
+  return "ž";
 }
