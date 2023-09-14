@@ -2,9 +2,14 @@
   "name": "mono-dev",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "@jscutlery/semver": "^3.1.0",
     "@nx/eslint-plugin": "16.8.1",
     "@nx/js": "16.8.1",
     "@nx/linter": "16.8.1",
@@ -19,6 +24,7 @@
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "8.1.0",
+    "husky": "^8.0.0",
     "inquirer": "^8.0.0",
     "nx": "16.8.1",
     "nx-release": "^3.1.5",
@@ -28,5 +34,6 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {}
 }
