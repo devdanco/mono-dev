@@ -3,7 +3,7 @@ name: Pre-release
 on:
   push:
     branches:
-      - "rc/*"
+      - "beta"
 
 jobs:
   main:
