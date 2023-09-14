@@ -1,3 +1,10 @@
+## [1.1.0-rc.1](https://github.com/devdanco/mono-dev/compare/v1.0.0...v1.1.0-rc.1) (2023-09-14)
+
+
+### Features
+
+* awesome ([1efe4a1](https://github.com/devdanco/mono-dev/commit/1efe4a1b029044758edae5a2f854a95413aa40f3))
+
 ## 1.0.0 (2023-09-14)
 
 
