@@ -16,7 +16,7 @@ jobs:
         run: npx nx run-many -t test --configuration=ci
 
       - name: Release
-        run: npx nx semantic-release:foundation
+        run: npx nx run nx-semantic-release:semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
