@@ -7,7 +7,7 @@ const jobCount = Number(process.argv[4]);
 const affected = execSync(
     `npx nx print-affected --base=main --target=${target}`
 ).toString('utf-8');
-console.log("affected",JSON.parse(affected))
+console.log("affected",JSON.stringify(JSON.parse(affected), null, 2));
 
 
 const array = JSON.parse(affected)
