@@ -3,11 +3,9 @@ import {execSync} from "child_process"
 const target = process.argv[2];
 const jobIndex = Number(process.argv[3]);
 const jobCount = Number(process.argv[4]);
-const isMain = process.argv[5] === 'refs/heads/main';
-const baseSha = isMain ? 'origin/main~1' : 'origin/main';
 
 const affected = execSync(
-    `npx nx print-affected --base=${baseSha} --target=${target}`
+    `npx nx print-affected --base=main --target=${target}`
 ).toString('utf-8');
 const array = JSON.parse(affected)
     .tasks.map((t) => t.target.project)
