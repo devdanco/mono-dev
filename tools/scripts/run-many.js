@@ -5,12 +5,17 @@ const jobIndex = Number(process.argv[3]);
 const jobCount = Number(process.argv[4]);
 
 const affected = execSync(
-    `npx nx show projects --affected --base=main --target=${target}`
+    `nx print-affected --base=main --target=${target}`
 ).toString('utf-8');
+console.log("affected",JSON.parse(affected))
+
+
 const array = JSON.parse(affected)
     .tasks.map((t) => t.target.project)
     .slice()
     .sort();
+
+console.log("ohoho", array)
 const sliceSize = Math.max(Math.floor(array.length / jobCount), 1);
 const projects =
     jobIndex < jobCount
