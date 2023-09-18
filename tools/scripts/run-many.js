@@ -14,7 +14,7 @@ const affected2 = execSync(
     `npx nx show projects --affected --base=main --target=${target}`
 ).toString('utf-8');
 
-console.log("affected2",JSON.stringify(JSON.parse(affected2), null, 2));
+console.log("affected2",affected2);
 
 
 const array = JSON.parse(affected)
