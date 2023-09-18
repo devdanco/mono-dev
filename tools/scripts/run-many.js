@@ -5,7 +5,7 @@ const jobIndex = Number(process.argv[3]);
 const jobCount = Number(process.argv[4]);
 
 const affected = execSync(
-    `nx print-affected --base=main --target=${target}`
+    `npx nx print-affected --base=main --target=${target}`
 ).toString('utf-8');
 console.log("affected",JSON.parse(affected))
 
