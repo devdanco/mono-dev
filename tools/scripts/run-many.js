@@ -10,6 +10,13 @@ const affected = execSync(
 console.log("affected",JSON.stringify(JSON.parse(affected), null, 2));
 
 
+const affected2 = execSync(
+    `npx nx show projects --affected --base=main --target=${target}`
+).toString('utf-8');
+
+console.log("affected2",JSON.stringify(JSON.parse(affected2), null, 2));
+
+
 const array = JSON.parse(affected)
     .tasks.map((t) => t.target.project)
     .slice()

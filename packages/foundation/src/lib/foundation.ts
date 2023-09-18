@@ -1,3 +1,3 @@
 export function foundation(): string {
-  return "dsdasdaxc kfdfndjn gsfsdfdsfdd"
+  return "dsdasdaxc kfdda gsfsdfdsfdd"
 }

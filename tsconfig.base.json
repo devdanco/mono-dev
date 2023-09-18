@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mononxtest/foundation": ["packages/foundation/src/index.ts"]
+      "@mononxtest/foundation": ["packages/foundation/src/index.ts"],
+      "@mononxtest/util": ["packages/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
