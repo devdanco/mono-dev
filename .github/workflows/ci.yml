@@ -1,8 +1,27 @@
 name: Nx Distributed Tasks
 on: push
 jobs:
+  install-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache node modules
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: cache-node-modules-${{ hashFiles('package-lock.json') }}
+      - uses: actions/setup-node@v3
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          node-version: 16
+      - name: npm i
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+
   distributed-task:
     runs-on: ubuntu-latest
+    needs: install-deps
     strategy:
       matrix:
         target: ['test', 'lint', 'build']
@@ -12,5 +31,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: git fetch --no-tags --prune --depth=1 origin main
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: cache-node-modules-${{ hashFiles('package-lock.json') }}
       - run: yarn install
       - run: node ./tools/scripts/run-many.js ${{ matrix.target }} ${{ matrix.jobIndex }} ${{ env.jobCount }} $GITHUB_REF
