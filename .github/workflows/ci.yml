@@ -1,24 +1,11 @@
-name: CI
-on:
-  push:
-    branches:
-      - '*'
-      - '*/*'
-      - '**'
-      - '!main'
+name: Nx Standard Use Case
+on: push
 jobs:
-  main:
+  ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - uses: nrwl/nx-set-shas@v3
-      - name: Install deps
-        run: npm i
-      - name: Lint affected
-        run: npx nx affected -t lint
-      - name: Test affected
-        run: npx nx affected -t test --configuration=ci
-      - name: Build affected
-        run: npx nx affected -t build
+      - uses: actions/checkout@v3
+      - run: yarn install
+      - run: yarn nx run-many --target=test --all
+      - run: yarn nx run-many --target=lint --all
+      - run: yarn nx run-many --target=build --all --prod
