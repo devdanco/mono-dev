@@ -43,6 +43,6 @@ jobs:
             restore-keys: |
               cache-nx-${{ hashFiles('package-lock.json') }}-${{ matrix.target }}-${{ matrix.jobIndex }}-
               cache-nx-${{ hashFiles('package-lock.json') }}-
-        - run: git fetch --no-tags --prune --depth=1 origin master
+        - run: git fetch --no-tags --prune --depth=1 origin main
         - name: nx run-many:${{ matrix.target }}
           run: node ./tools/scripts/run-many.js ${{ matrix.target }} ${{ matrix.jobIndex }} ${{ env.jobCount }} $GITHUB_REF
