@@ -9,14 +9,13 @@ const affected = execSync(
     `npx nx show projects --affected --base=main --target=${target}`
 ).toString('utf-8');
 
+const affectedArray = affected.split('\n').filter(Boolean);
 
-let arr = [].push(affected)
-
-const sliceSize = Math.max(Math.floor(arr.length / jobCount), 1);
+const sliceSize = Math.max(Math.floor(affectedArray.length / jobCount), 1);
 const projects =
     jobIndex < jobCount
-        ? arr.slice(sliceSize * (jobIndex - 1), sliceSize * jobIndex)
-        : arr.slice(sliceSize * (jobIndex - 1));
+        ? affectedArray.slice(sliceSize * (jobIndex - 1), sliceSize * jobIndex)
+        : affectedArray.slice(sliceSize * (jobIndex - 1));
 
 if (projects.length > 0) {
     execSync(
