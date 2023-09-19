@@ -1,7 +1,7 @@
-# foundation
+# testing
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build foundation` to build the library.
+Run `nx build testing` to build the library.

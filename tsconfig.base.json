@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@mononxtest/foundation": ["packages/foundation/src/index.ts"],
+      "@mononxtest/testing": ["packages/testing/src/index.ts"],
       "@mononxtest/util": ["packages/util/src/index.ts"]
     }
   },
