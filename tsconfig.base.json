@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mononxtest/testo": ["packages/testo/src/index.ts"],
+      "@mononxtest/mumu": ["packages/mumu/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

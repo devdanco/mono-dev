@@ -1,7 +1,7 @@
-# testo
+# mumu
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build testo` to build the library.
+Run `nx build mumu` to build the library.

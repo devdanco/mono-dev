@@ -1,6 +1,6 @@
 {
-  "name": "@mononxtest/testo",
-  "version": "1.0.0-beta.1",
+  "name": "@mononxtest/mumu",
+  "version": "0.0.1",
   "dependencies": {
     "tslib": "^2.3.0"
   },

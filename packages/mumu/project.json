@@ -1,17 +1,17 @@
 {
-  "name": "testo",
+  "name": "mumu",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/testo/src",
+  "sourceRoot": "packages/mumu/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/testo",
-        "main": "packages/testo/src/index.ts",
-        "tsConfig": "packages/testo/tsconfig.lib.json",
-        "assets": ["packages/testo/*.md"]
+        "outputPath": "dist/packages/mumu",
+        "main": "packages/mumu/src/index.ts",
+        "tsConfig": "packages/mumu/tsconfig.lib.json",
+        "assets": ["packages/mumu/*.md"]
       }
     },
     "lint": {
@@ -19,15 +19,15 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "packages/testo/**/*.ts",
-          "packages/testo/package.json"
+          "packages/mumu/**/*.ts",
+          "packages/mumu/package.json"
         ]
       }
     },
     "release": {
       "executor": "nx-release:build-update-publish",
       "options": {
-        "libName": "testo"
+        "libName": "mumu"
       }
     }
   },
