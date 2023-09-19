@@ -24,8 +24,11 @@
         ]
       }
     },
-    "semantic-release": {
-      "executor": "@goestav/nx-semantic-release:semantic-release"
+    "release": {
+      "executor": "nx-release:build-update-publish",
+      "options": {
+        "libName": "foundation"
+      }
     }
   },
   "tags": []
