@@ -1,3 +1,3 @@
 export function testo(): string {
-  return 'testo lib';
+  return 'testo lib prerelease';
 }
