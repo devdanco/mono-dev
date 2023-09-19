@@ -1,0 +1,66 @@
+## 1.0.0 (2023-09-19)
+
+
+### Features
+
+* awesome ([1efe4a1](https://github.com/devdanco/mono-dev/commit/1efe4a1b029044758edae5a2f854a95413aa40f3))
+* awesome lib ([5c8fd1c](https://github.com/devdanco/mono-dev/commit/5c8fd1c1ab05042971ecde4a90c8264f9e2f6043))
+* dadsa ([a3c3c2b](https://github.com/devdanco/mono-dev/commit/a3c3c2ba217698fb4463fc0c01f36946dc9fe9ca))
+* dasd ([27e5a60](https://github.com/devdanco/mono-dev/commit/27e5a60584a037e618949cd10b8f281729aeb0dd))
+* dsajdsadsadas ([df6b680](https://github.com/devdanco/mono-dev/commit/df6b680f3db3f57c515cd773a754b69ab0f7c38c))
+* dsdasds ([304bf80](https://github.com/devdanco/mono-dev/commit/304bf802b185fa4ccadd410841a5cbc9660e8171))
+* hey ([77d9b90](https://github.com/devdanco/mono-dev/commit/77d9b90da10f11c07b06688cea4435363c454ce6))
+* perfect ([51a5f01](https://github.com/devdanco/mono-dev/commit/51a5f01f273fb036c0335601fe4f5628057a0001))
+* pre release ([d4b175a](https://github.com/devdanco/mono-dev/commit/d4b175a7383a563a17e1b1b444bc9b4530f3ad4e))
+* public ([a1af17e](https://github.com/devdanco/mono-dev/commit/a1af17e5e8e71f7fa6bf4b99dca74f6e3fb5b363))
+
+
+### Bug Fixes
+
+* adasdsa ([8714c3a](https://github.com/devdanco/mono-dev/commit/8714c3a5f863be4ef31d27814ff229c8bcbf3e05))
+* assas ([20f8736](https://github.com/devdanco/mono-dev/commit/20f873660e28e44fc102b937586862886d449a28))
+* ci ([2c91228](https://github.com/devdanco/mono-dev/commit/2c9122875b8dd71d80cf917e864f6c067d8d3a21))
+* dada ([b1b2eb6](https://github.com/devdanco/mono-dev/commit/b1b2eb6b82ba508b17a59f25cbca1e3c7416573c))
+* dadads ([fcc88bd](https://github.com/devdanco/mono-dev/commit/fcc88bd16cd6fdce61e99c1c6571e6711fcb6037))
+* dadads ([dfcb5c6](https://github.com/devdanco/mono-dev/commit/dfcb5c6bd84f0ac4d587e57e616e7ccac6db05f5))
+* dadas ([9f27913](https://github.com/devdanco/mono-dev/commit/9f27913620edbdb88d08dbd7f2159782e118aec5))
+* dadasd ([8a70bc7](https://github.com/devdanco/mono-dev/commit/8a70bc73060918caf9f5566ff453f19610c22bb5))
+* dasd ([c382ee5](https://github.com/devdanco/mono-dev/commit/c382ee5aad63527f0efa201c8218ccab52e6144c))
+* dasd ([6087080](https://github.com/devdanco/mono-dev/commit/6087080a114dac203245a871856dd2e2e465979d))
+* dasda ([a859632](https://github.com/devdanco/mono-dev/commit/a859632df5cff29346a3cacbcc03584cefe728ea))
+* dasdasd ([83d46da](https://github.com/devdanco/mono-dev/commit/83d46da2a7430e5a08f0ce883a10b606b68d7ea7))
+* dasdsa ([676bd65](https://github.com/devdanco/mono-dev/commit/676bd651f9397767c0710148c5de408cecc49d22))
+* dasdsa ([dfa690e](https://github.com/devdanco/mono-dev/commit/dfa690e09e78bbd3ffc34e21104f4d13723c6793))
+* dasdsa ([1715f11](https://github.com/devdanco/mono-dev/commit/1715f11c44d9102bf690c31c6c7e5c99bf35126c))
+* dasdsadsadadadas ([dd9e9eb](https://github.com/devdanco/mono-dev/commit/dd9e9ebf8bc1363d25cb6a9a2709020fb8fdcba5))
+* dsadasd ([c8ea75a](https://github.com/devdanco/mono-dev/commit/c8ea75aae6b96b6b7b440970e5e628e5783b1a0a))
+* dsadasda ([c5e25e2](https://github.com/devdanco/mono-dev/commit/c5e25e2b93802409d8e4b439fa49bb6351767346))
+* dsadasdsada ([e484b7d](https://github.com/devdanco/mono-dev/commit/e484b7dfa7d501297c3cc8f4f219b4e4da197b0b))
+* dsadsa ([83f09e8](https://github.com/devdanco/mono-dev/commit/83f09e8583cf3dc44dc6e82c056c16c785afc1ab))
+* dsadsad ([8909dbe](https://github.com/devdanco/mono-dev/commit/8909dbec24bbe4b4ed775f45594d95443ba591ba))
+* dsadsadsad ([8ffd6c3](https://github.com/devdanco/mono-dev/commit/8ffd6c36a0521b023286b4ca652d294ba6c4afaa))
+* dsadsadsada ([64cc974](https://github.com/devdanco/mono-dev/commit/64cc97419eb7a34ace53c7cbdd1a92e4f099b788))
+* ehy ([2fe0efb](https://github.com/devdanco/mono-dev/commit/2fe0efb71e7a01af327363b2fcb1f6c90f70d8a6))
+* huhu ([81847ad](https://github.com/devdanco/mono-dev/commit/81847ad548bf3d6d75588061d78a000032079feb))
+* jkjkj ([50d4a67](https://github.com/devdanco/mono-dev/commit/50d4a677de5358c87f871f9cc633387c560ac401))
+* node 18 ([2afe741](https://github.com/devdanco/mono-dev/commit/2afe741018a142fa948a0985022e74715d31a9ca))
+* npm ([2b9e0d7](https://github.com/devdanco/mono-dev/commit/2b9e0d73c108e091f3f83d8adc5968bebafa622d))
+* opopopp ([f7348b2](https://github.com/devdanco/mono-dev/commit/f7348b2f86a810054d70f47194af06fa3f9e395d))
+* packa ([d836a61](https://github.com/devdanco/mono-dev/commit/d836a61ae07947ea6e7b7a11de362b3065aea3f1))
+* parallel ([a2df5c0](https://github.com/devdanco/mono-dev/commit/a2df5c05e33830168267d417a133ff587afaddd5))
+* poop ([6957031](https://github.com/devdanco/mono-dev/commit/6957031329c2bed2585652831f152a3defde8cdc))
+* popopop ([c2ae5f5](https://github.com/devdanco/mono-dev/commit/c2ae5f592e44289da8c744e3d0247fe14d3d9e55))
+* qewewqeqw ([1bea57d](https://github.com/devdanco/mono-dev/commit/1bea57d213d21c7263d2e2c98457ae926771ddce))
+* qwqweq ([4064aa7](https://github.com/devdanco/mono-dev/commit/4064aa758f7a430403afa38d63c610d20f19153e))
+* remove yarn ([7ece726](https://github.com/devdanco/mono-dev/commit/7ece726c8c9aace8eb118e746ec1d6e145e67702))
+* sdadas ([d3c0498](https://github.com/devdanco/mono-dev/commit/d3c04985b291c6a852d49ea23ae007059c39a3ce))
+
+
+### Chores
+
+* ci ([ae19ebf](https://github.com/devdanco/mono-dev/commit/ae19ebf82a60adcc908c4157446dd90bba9a22ad))
+* **release:** -v1.0.0 [skip ci] ([8984797](https://github.com/devdanco/mono-dev/commit/89847971fd3f844d9562ca8a846345d42ea67e6c))
+* **release:** -v1.0.0 [skip ci] ([139bced](https://github.com/devdanco/mono-dev/commit/139bcedee9918efde2b0342de711ba3261df6325))
+* **release:** -v1.1.0 [skip ci] ([4fe73ac](https://github.com/devdanco/mono-dev/commit/4fe73ac3fe5909f6acf818911b9739d3832e14ca))
+* **release:** -v1.1.0-rc.1 [skip ci] ([46c0b96](https://github.com/devdanco/mono-dev/commit/46c0b96758e0b6a4447ab1f4631d6e40adb96dfd))
+* **release:** 1.0.0 [skip ci] ([f7eafc7](https://github.com/devdanco/mono-dev/commit/f7eafc7b5b821d05dbf037f0a1d64cdb1c80859b))
