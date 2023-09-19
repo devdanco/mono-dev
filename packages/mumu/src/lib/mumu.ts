@@ -1,3 +1,3 @@
 export function mumu(): string {
-  return 'mumu kkk';
+  return 'mumu kkk test prerelease';
 }
