@@ -22,3 +22,6 @@ jobs:
         run: npx nx affected -t test --configuration=ci
       - name: Build affected
         run: npx nx affected -t build
+      - name: Extract Latest NPM Version
+        id: extract-version
+        run: echo "::set-output name=version::$(npm show @mononxtest/mumu version)"
