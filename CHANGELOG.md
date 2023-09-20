@@ -1,3 +1,16 @@
+## [1.0.2](https://github.com/devdanco/mono-dev/compare/v1.0.1...v1.0.2) (2023-09-20)
+
+
+### Bug Fixes
+
+* aaaa ([cbfd739](https://github.com/devdanco/mono-dev/commit/cbfd739c5d45b5cf65c3e16d3860c804b382e258))
+
+
+### Chores
+
+* dsadsa ([ddcd098](https://github.com/devdanco/mono-dev/commit/ddcd098d8208a4727d4fabce2d2406263f34ac48))
+* **release:** -v1.0.2-rc.1 [skip ci] ([f939c69](https://github.com/devdanco/mono-dev/commit/f939c6968cc9105136ba3692906546660a0a882b))
+
 ## [1.0.2-rc.1](https://github.com/devdanco/mono-dev/compare/v1.0.1...v1.0.2-rc.1) (2023-09-19)
 
 
