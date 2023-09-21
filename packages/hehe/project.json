@@ -1,0 +1,35 @@
+{
+  "name": "hehe",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/hehe/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/hehe",
+        "main": "packages/hehe/src/index.ts",
+        "tsConfig": "packages/hehe/tsconfig.lib.json",
+        "assets": ["packages/hehe/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/hehe/**/*.ts",
+          "packages/hehe/package.json"
+        ]
+      }
+    },
+    "release": {
+      "executor": "nx-release:build-update-publish",
+      "options": {
+        "libName": "hehe"
+      }
+    }
+  },
+  "tags": []
+}
