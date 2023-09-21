@@ -1,0 +1,64 @@
+name: PRE-RELEASE
+on: [workflow_dispatch]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package:
+          - '@mononxtest/hoho'
+          - '@mononxtest/hehe'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: nrwl/nx-set-shas@v3
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Lint
+        run: npx nx run-many -t lint
+
+      - name: Test
+        run: npx nx run-many -t test --configuration=ci
+
+      - name: Check if package exists with latest tag
+        id: check_package_exists
+        run: |
+          if npm show ${{ matrix.package }} > /dev/null 2>&1; then
+            echo "PACKAGE_EXISTS=true" >> $GITHUB_ENV
+          else
+            echo "PACKAGE_EXISTS=false" >> $GITHUB_ENV
+          fi
+
+      - name: Extract Latest Version
+        id: extract_latest_version
+        run: |
+          if [ "${{ env.PACKAGE_EXISTS }}" == "true" ]; then
+            echo "LATEST_VERSION=$(npm show ${{ matrix.package }} version)" >> $GITHUB_ENV
+          fi
+
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Extract released version
+        run: echo "LATEST_RELEASED_VERSION=$(npm show ${{ matrix.package }} version)" >> $GITHUB_ENV
+
+      - name: Npm registry
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+      - name: Update latest tag to rc tag (because of bug)
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          npm dist-tag add ${{ matrix.package }}@${{ env.LATEST_RELEASED_VERSION }} rc
+
+      - name: Update to latest version if exists
+        if: env.PACKAGE_EXISTS == 'true'
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          npm dist-tag add ${{ matrix.package }}@${{ env.LATEST_VERSION }} latest
