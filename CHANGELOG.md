@@ -1,3 +1,15 @@
+## [1.0.3](https://github.com/devdanco/mono-dev/compare/v1.0.2...v1.0.3) (2023-09-21)
+
+
+### Bug Fixes
+
+* dasdassdadad ([659a5a7](https://github.com/devdanco/mono-dev/commit/659a5a793be82f2b6bda59084c1be3da27452e54))
+
+
+### Chores
+
+* **release:** -v1.0.3-rc.1 [skip ci] ([e6d39bb](https://github.com/devdanco/mono-dev/commit/e6d39bb72ccc42b1de8260cf1fc8f148488a0073))
+
 ## [1.0.3-rc.1](https://github.com/devdanco/mono-dev/compare/v1.0.2...v1.0.3-rc.1) (2023-09-20)
 
 
