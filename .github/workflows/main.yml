@@ -49,9 +49,6 @@ jobs:
       - name: Extract released version
         run: echo "LATEST_RELEASED_VERSION=$(npm show ${{ matrix.package }} version)" >> $GITHUB_ENV
 
-      - name: Npm registry
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-
       - name: Update latest tag to rc tag (because of bug)
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
