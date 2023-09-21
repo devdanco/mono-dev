@@ -26,7 +26,7 @@ jobs:
       - name: Check if package exists
         id: check_package_exists
         run: |
-          if npm show @mononxtest/hoho > /dev/null 2>&1; then
+          if npm show @mangata-finance/sdk > /dev/null 2>&1; then
             echo "PACKAGE_EXISTS=true" >> $GITHUB_ENV
           else
             echo "PACKAGE_EXISTS=false" >> $GITHUB_ENV
@@ -36,6 +36,6 @@ jobs:
         id: extract_latest_version
         run: |
           if [ "${{ env.PACKAGE_EXISTS }}" == "true" ]; then
-            echo "LATEST_VERSION=$(npm show @mononxtest/hoho version)" >> $GITHUB_ENV
+            echo "LATEST_VERSION=$(npm show @mangata-finance/sdk version)" >> $GITHUB_ENV
           fi
-      - run: echo ${{ env.PACKAGE_EXISTS }}
+      - run: echo ${{ env.LATEST_VERSION }}
