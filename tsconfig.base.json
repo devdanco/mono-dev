@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mononxtest/mumu": ["packages/mumu/src/index.ts"]
+      "@mononxtest/hehe": ["packages/hehe/src/index.ts"],
+      "@mononxtest/hoho": ["packages/hoho/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,7 +1,7 @@
-# mumu
+# hoho
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build mumu` to build the library.
+Run `nx build hoho` to build the library.
