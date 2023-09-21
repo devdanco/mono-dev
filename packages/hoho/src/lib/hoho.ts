@@ -1,3 +1,3 @@
 export function hoho(): string {
-  return 'perfect';
+  return 'perfeaaaaact';
 }

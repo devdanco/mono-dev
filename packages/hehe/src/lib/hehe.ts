@@ -1,3 +1,3 @@
 export function hehe(): string {
-  return 'huhuhuh';
+  return 'huhuhuddddh';
 }
