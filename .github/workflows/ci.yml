@@ -38,4 +38,4 @@ jobs:
           if [ "${{ env.PACKAGE_EXISTS }}" == "true" ]; then
             echo "LATEST_VERSION=$(npm show @mononxtest/hoho version)" >> $GITHUB_ENV
           fi
-      - run: echo ${{ env.LATEST_VERSION }}
+      - run: echo ${{ env.PACKAGE_EXISTS }}
