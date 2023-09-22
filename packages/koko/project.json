@@ -1,0 +1,29 @@
+{
+  "name": "koko",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/koko/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/koko",
+        "main": "packages/koko/src/index.ts",
+        "tsConfig": "packages/koko/tsconfig.lib.json",
+        "assets": ["packages/koko/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/koko/**/*.ts",
+          "packages/koko/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

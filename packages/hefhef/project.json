@@ -1,0 +1,44 @@
+{
+  "name": "hefhef",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/hefhef/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/hefhef",
+        "main": "packages/hefhef/src/index.ts",
+        "tsConfig": "packages/hefhef/tsconfig.lib.json",
+        "assets": [
+          "packages/hefhef/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/hefhef/**/*.ts",
+          "packages/hefhef/package.json"
+        ]
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "v${VERSION}"
+      }
+    }
+  },
+  "tags": []
+}

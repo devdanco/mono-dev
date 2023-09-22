@@ -1,44 +1,22 @@
-name: PRE-RELEASE
-on: [workflow_dispatch]
+name: default
+
+on:
+  push:
+    branches:
+      - 'main'
+
 jobs:
-  main:
+  release:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        package:
-          - '@mononxtest/hoho'
-          - '@mononxtest/hehe'
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v3
 
-      - uses: nrwl/nx-set-shas@v3
+      - run: npm ci
 
-      - name: Install deps
-        run: npm ci
+      - name: Build affected
+        run: npx nx affected -t build
 
-      - name: Lint
-        run: npx nx run-many -t lint
-
-      - name: Test
-        run: npx nx run-many -t test --configuration=ci
-
-      - name: Extract Latest Version
-        id: extract_latest_version
-        run: echo "LATEST_VERSION=$(npm show ${{ matrix.package }} version)" >> $GITHUB_ENV
-
-      - name: Release
-        run: npx semantic-release
+      - run: npx nx run my-app:semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Extract released version
-        run: echo "LATEST_RELEASED_VERSION=$(npm show ${{ matrix.package }} version)" >> $GITHUB_ENV
-
-      - name: Update latest tag to rc tag (because of bug)
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-          npm dist-tag add ${{ matrix.package }}@${{ env.LATEST_RELEASED_VERSION }} rc
-          npm dist-tag add ${{ matrix.package }}@${{ env.LATEST_VERSION }} latest
