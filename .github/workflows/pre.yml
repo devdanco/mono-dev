@@ -4,11 +4,11 @@ on:
   push:
     branches: ['rc/*']
     paths:
-      - 'packages/@mononxtest/hefhef/**'
+      - 'packages/hefhef/**'
 
 defaults:
   run:
-    working-directory: packages/@mononxtest/hefhef
+    working-directory: packages/hefhef
 
 jobs:
   release:
