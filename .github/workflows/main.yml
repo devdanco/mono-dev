@@ -16,7 +16,7 @@ jobs:
       - name: Build affected
         run: npx nx affected -t build
 
-      - run: npx nx run my-app:semantic-release
+      - run: npx nx run hefhef:semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
