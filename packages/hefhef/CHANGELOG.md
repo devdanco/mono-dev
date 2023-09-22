@@ -1,3 +1,10 @@
+# [1.6.0-rc.1](https://github.com/devdanco/mono-dev/compare/v1.5.0...v1.6.0-rc.1) (2023-09-22)
+
+
+### Features
+
+* aaaaaaaa ([eb27411](https://github.com/devdanco/mono-dev/commit/eb274118cd0dd7f9141c5f9876fe1e4fbc05e198))
+
 # [1.5.0](https://github.com/devdanco/mono-dev/compare/v1.4.0...v1.5.0) (2023-09-22)
 
 
