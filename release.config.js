@@ -37,5 +37,6 @@ module.exports = {
           'chore(release): -v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
+    "semantic-release-export-data"
   ],
 };
