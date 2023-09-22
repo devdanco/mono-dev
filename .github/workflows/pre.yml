@@ -1,0 +1,22 @@
+name: pre
+
+on:
+  push:
+    branches:
+      - 'rc/*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: npm ci
+
+      - name: Build affected
+        run: npx nx affected -t build
+
+      - run: npx nx run @mononxtest/hefhef:semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
