@@ -6,5 +6,10 @@
   "branches": [
     "main",
     { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
+  ],
+  "plugins": [
+    ["@semantic-release/npm", {
+      "npmPublish": true
+    }]
   ]
 }
