@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/devdanco/mono-dev/compare/v1.1.0...v1.2.0) (2023-09-22)
+
+
+### Features
+
+* iii ([4205727](https://github.com/devdanco/mono-dev/commit/4205727f79cc10bc4db84a81068efd9484b3cb08))
+* y ([4fd4a9a](https://github.com/devdanco/mono-dev/commit/4fd4a9ab159556148cbcf717ca4cf8889afe1299))
+
 # [1.1.0](https://github.com/devdanco/mono-dev/compare/v1.0.2...v1.1.0) (2023-09-22)
 
 
