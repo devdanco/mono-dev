@@ -1,5 +1,5 @@
 {
-  "name": "koko",
+  "name": "@mononxtest/koko",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/koko/src",
   "projectType": "library",
@@ -22,6 +22,22 @@
           "packages/koko/**/*.ts",
           "packages/koko/package.json"
         ]
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "branches": [
+          "main",
+          { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
+        ],
+        "buildTarget": "@mononxtest/koko:build",
+        "repositoryUrl": "https://github.com/devdanco/mono-dev",
+        "outputPath": "dist/packages/koko",
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "v${VERSION}"
       }
     }
   },
