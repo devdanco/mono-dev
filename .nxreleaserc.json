@@ -4,6 +4,7 @@
   "github": true,
   "repositoryUrl": "https://github.com/devdanco/mono-dev",
   "branches": [
-    "master"
+    "main",
+    { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
   ]
 }
