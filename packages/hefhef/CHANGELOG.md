@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/devdanco/mono-dev/compare/v1.4.0...v1.5.0) (2023-09-22)
+
+
+### Features
+
+* huhuhuhuhu ([7218830](https://github.com/devdanco/mono-dev/commit/721883025147186034b9d9bf48a75974cdff52ec))
+* m ([79cb347](https://github.com/devdanco/mono-dev/commit/79cb347abe2b576817f0f45e17424e87236be7d0))
+
 # [1.5.0-rc.2](https://github.com/devdanco/mono-dev/compare/v1.5.0-rc.1...v1.5.0-rc.2) (2023-09-22)
 
 
