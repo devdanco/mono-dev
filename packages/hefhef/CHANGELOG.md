@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/devdanco/mono-dev/compare/v1.0.0...v1.0.1) (2023-09-22)
+
+
+### Bug Fixes
+
+* a ([e794f36](https://github.com/devdanco/mono-dev/commit/e794f36d78b2dec252fbcff96cb9a769a2e7180c))
+
 # 1.0.0 (2023-09-22)
 
 
