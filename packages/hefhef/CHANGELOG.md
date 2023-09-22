@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/devdanco/mono-dev/compare/v1.0.2...v1.1.0) (2023-09-22)
+
+
+### Features
+
+* adsadsadsadsadsadas ([3ff963c](https://github.com/devdanco/mono-dev/commit/3ff963c72e8039422fe1d2eaff1d61ac2f2f52dd))
+
 ## [1.0.2](https://github.com/devdanco/mono-dev/compare/v1.0.1...v1.0.2) (2023-09-22)
 
 
