@@ -33,6 +33,13 @@
     "semantic-release": {
       "executor": "@theunderscorer/nx-semantic-release:semantic-release",
       "options": {
+        "branches": [
+          "main",
+          { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
+        ],
+        "buildTarget": "@mononxtest/hefhef:build",
+        "repositoryUrl": "https://github.com/devdanco/mono-dev",
+        "outputPath": "dist/packages/hefhef",
         "github": true,
         "changelog": true,
         "npm": true,
