@@ -1,17 +1,17 @@
 {
-  "name": "hehe",
+  "name": "bebe",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/hehe/src",
+  "sourceRoot": "packages/bebe/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/hehe",
-        "main": "packages/hehe/src/index.ts",
-        "tsConfig": "packages/hehe/tsconfig.lib.json",
-        "assets": ["packages/hehe/*.md"]
+        "outputPath": "dist/packages/bebe",
+        "main": "packages/bebe/src/index.ts",
+        "tsConfig": "packages/bebe/tsconfig.lib.json",
+        "assets": ["packages/bebe/*.md"]
       }
     },
     "lint": {
@@ -19,15 +19,15 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "packages/hehe/**/*.ts",
-          "packages/hehe/package.json"
+          "packages/bebe/**/*.ts",
+          "packages/bebe/package.json"
         ]
       }
     },
     "release": {
       "executor": "nx-release:build-update-publish",
       "options": {
-        "libName": "hehe"
+        "libName": "bebe"
       }
     }
   },

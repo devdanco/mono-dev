@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mononxtest/hehe": ["packages/hehe/src/index.ts"],
-      "@mononxtest/hoho": ["packages/hoho/src/index.ts"]
+      "@mononxtest/bebe": ["packages/bebe/src/index.ts"],
+      "@mononxtest/bobo": ["packages/bobo/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
