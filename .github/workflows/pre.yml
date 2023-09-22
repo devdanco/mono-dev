@@ -2,8 +2,13 @@ name: pre
 
 on:
   push:
-    branches:
-      - 'rc/*'
+    branches: ['rc/*']
+    paths:
+      - 'packages/@mononxtest/hefhef/**'
+
+defaults:
+  run:
+    working-directory: packages/@mononxtest/hefhef
 
 jobs:
   release:
@@ -13,7 +18,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx run-many --target=semantic-release --parallel=false
+      - run: npx nx run @mononxtest/hefhef:semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
