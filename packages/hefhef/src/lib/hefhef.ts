@@ -1,3 +1,3 @@
 export function hefhef(): string {
-  return 'dsadsaddssaddddddd';
+  return 'sssssss';
 }
