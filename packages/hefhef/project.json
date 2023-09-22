@@ -1,5 +1,5 @@
 {
-  "name": "hefhef",
+  "name": "@mononxtest/hefhef",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/hefhef/src",
   "projectType": "library",
