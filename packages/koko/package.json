@@ -2,8 +2,7 @@
   "name": "@mononxtest/koko",
   "version": "0.0.1",
   "dependencies": {
-    "tslib": "^2.3.0",
-    "@mononxtest/hefhef": "1.5.0"
+    "tslib": "^2.3.0"
   },
   "type": "commonjs",
   "main": "./src/index.js",

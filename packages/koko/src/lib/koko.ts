@@ -1,3 +1,3 @@
 export function koko(): string {
-  return 'aasdadaddsd';
+  return 'aasdadaddsdzmena';
 }
