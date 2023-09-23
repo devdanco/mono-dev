@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.0.0...@mononxtest/hefhef-v1.1.0) (2023-09-23)
+
+
+### Features
+
+* zmena ([f419fb6](https://github.com/devdanco/mono-dev/commit/f419fb606344da8de1735c7bc8f073b266b204be))
+
 # [1.1.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.0.0...@mononxtest/hefhef-v1.1.0-rc.1) (2023-09-23)
 
 
