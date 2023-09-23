@@ -2,9 +2,10 @@ name: pre
 
 on:
   push:
-    branches: ['rc/*']
+    branches:
+      - 'rc/*'
     paths:
-      - 'packages/hefhef/**'
+      - packages/hefhef/**
 
 jobs:
   release:

@@ -1,6 +1,5 @@
 {
   "name": "mono-dev",
-  "version": "1.0.0",
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
