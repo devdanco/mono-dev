@@ -1,10 +1,11 @@
-name: pre
+name: koko
 
 on:
   push:
-    branches: ['rc/*']
+    branches:
+      - 'rc/*'
     paths:
-      - 'packages/hefhef/**'
+      - packages/koko/**
 
 jobs:
   release:
@@ -14,7 +15,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx run @mononxtest/hefhef:semantic-release
+      - run: npx nx run @mononxtest/koko:semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

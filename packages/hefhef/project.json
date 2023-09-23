@@ -43,7 +43,7 @@
         "github": true,
         "changelog": true,
         "npm": true,
-        "tagFormat": "v${VERSION}"
+        "tagFormat": "${PROJECT_NAME}-v${version}"
       }
     }
   },
