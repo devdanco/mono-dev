@@ -1,3 +1,10 @@
+## [0.0.4-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/mnau-v0.0.3...@mononxtest/mnau-v0.0.4-rc.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* small ([f3f42cd](https://github.com/devdanco/mono-dev/commit/f3f42cd2052ba2d921c1f15ef0decc1bcffd12f4))
+
 ## [0.0.3](https://github.com/devdanco/mono-dev/compare/@mononxtest/mnau-v0.0.2...@mononxtest/mnau-v0.0.3) (2023-09-26)
 
 
