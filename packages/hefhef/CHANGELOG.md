@@ -1,3 +1,21 @@
+# [1.2.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.1.1...@mononxtest/hefhef-v1.2.0-rc.1) (2023-09-26)
+
+
+### Features
+
+* new feat ([4c0ad36](https://github.com/devdanco/mono-dev/commit/4c0ad3629aac48569d8279f19a01b01e27a46d1f))
+
+
+
+
+
+# [1.2.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.1.1...@mononxtest/hefhef-v1.2.0-rc.1) (2023-09-26)
+
+
+### Features
+
+* new feat ([4c0ad36](https://github.com/devdanco/mono-dev/commit/4c0ad3629aac48569d8279f19a01b01e27a46d1f))
+
 ## [1.1.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.1.0...@mononxtest/hefhef-v1.1.1) (2023-09-26)
 
 
