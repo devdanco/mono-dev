@@ -37,6 +37,7 @@
           "main",
           { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
         ],
+        "plugins": ["semantic-release-unsquash"],
         "buildTarget": "@mononxtest/hefhef:build",
         "repositoryUrl": "https://github.com/devdanco/mono-dev",
         "outputPath": "dist/packages/hefhef",
