@@ -1,1 +1,1 @@
-export * from './lib/type-definitions';
+export * from './lib/type-definitions.js';
