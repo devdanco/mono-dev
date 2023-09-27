@@ -1,3 +1,21 @@
+## [0.0.6](https://github.com/devdanco/mono-dev/compare/@mononxtest/mnau-v0.0.5...@mononxtest/mnau-v0.0.6) (2023-09-27)
+
+
+### Bug Fixes
+
+* mnau ([4078872](https://github.com/devdanco/mono-dev/commit/40788723120fe7f48ea3001624dd163d017ed03a))
+
+
+
+
+
+## [0.0.6](https://github.com/devdanco/mono-dev/compare/@mononxtest/mnau-v0.0.5...@mononxtest/mnau-v0.0.6) (2023-09-27)
+
+
+### Bug Fixes
+
+* mnau ([4078872](https://github.com/devdanco/mono-dev/commit/40788723120fe7f48ea3001624dd163d017ed03a))
+
 ## [0.0.5](https://github.com/devdanco/mono-dev/compare/@mononxtest/mnau-v0.0.4...@mononxtest/mnau-v0.0.5) (2023-09-27)
 
 
