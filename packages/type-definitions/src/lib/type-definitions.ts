@@ -165,7 +165,7 @@ export const mRpc = {
             type: "Balance"
         },
         get_max_instant_burn_amount: {
-            description: "",
+            description: "burn amount",
             params: [
                 {
                     name: "user",
