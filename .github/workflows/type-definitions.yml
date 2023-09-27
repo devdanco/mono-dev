@@ -4,18 +4,21 @@ on:
   push:
     branches:
       - 'rc/*'
-    paths:
-      - packages/type-definitions/**
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
 
       - run: npm ci
 
-      - run: npx nx run @mononxtest/type-definitions:semantic-release
+      - run: npx nx run-many -t lint
+
+      - run: npx nx affected -t semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
