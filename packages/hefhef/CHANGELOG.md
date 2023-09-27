@@ -1,3 +1,21 @@
+## [1.2.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.2.0...@mononxtest/hefhef-v1.2.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* a ([7b92bcf](https://github.com/devdanco/mono-dev/commit/7b92bcf5af73b164744aaaf3cec91b291ba9753c))
+
+
+
+
+
+## [1.2.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.2.0...@mononxtest/hefhef-v1.2.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* a ([7b92bcf](https://github.com/devdanco/mono-dev/commit/7b92bcf5af73b164744aaaf3cec91b291ba9753c))
+
 # [1.2.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/hefhef-v1.1.1...@mononxtest/hefhef-v1.2.0) (2023-09-26)
 
 
