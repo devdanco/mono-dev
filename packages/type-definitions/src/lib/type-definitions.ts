@@ -207,7 +207,7 @@ export const mRpc = {
             type: "Option<bool>"
         },
         get_tradeable_tokens: {
-            description: "tokens",
+            description: "trade tokens",
             params: [],
             type: "Vec<RpcAssetMetadata<TokenId>>"
         },
