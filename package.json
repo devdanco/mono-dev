@@ -1,10 +1,7 @@
 {
   "name": "mono-dev",
   "license": "MIT",
-  "type": "commonjs",
-  "scripts": {
-    "prepare": "husky install"
-  },
+  "type": "module",
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
@@ -14,15 +11,20 @@
     "@nx/eslint-plugin": "16.8.1",
     "@nx/js": "16.8.1",
     "@nx/linter": "16.8.1",
+    "@nx/vite": "16.8.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^11.0.0",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/release-notes-generator": "^12.0.0",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "1.3.84",
     "@theunderscorer/nx-semantic-release": "^2.6.2",
     "@types/node": "18.7.1",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "@vitest/coverage-c8": "~0.32.0",
+    "@vitest/ui": "~0.32.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "8.1.0",
@@ -34,9 +36,14 @@
     "replace-json-property": "^1.9.0",
     "semantic-release-export-data": "^1.0.1",
     "semantic-release-unsquash": "^0.2.0",
-    "typescript": "~5.1.3"
+    "typescript": "~5.1.3",
+    "vite": "~4.3.9",
+    "vitest": "~0.32.0"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@swc/helpers": "~0.5.0"
+  }
 }

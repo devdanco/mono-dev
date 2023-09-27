@@ -1,0 +1,21 @@
+name: type-definitions
+
+on:
+  push:
+    branches:
+      - 'rc/*'
+    paths:
+      - packages/type-definitions/**
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: npm ci
+
+      - run: npx nx run @mononxtest/type-definitions:semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -16,8 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@mononxtest/hefhef": ["packages/hefhef/src/index.ts"],
+      "@mononxtest/kmi": ["packages/kmi/src/index.ts"],
       "@mononxtest/koko": ["packages/koko/src/index.ts"],
-      "@mononxtest/mnau": ["packages/mnau/src/index.ts"]
+      "@mononxtest/mnau": ["packages/mnau/src/index.ts"],
+      "@mononxtest/type-definitions": ["packages/type-definitions/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
