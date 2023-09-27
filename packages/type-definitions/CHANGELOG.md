@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/devdanco/mono-dev/compare/@mononxtest/type-definitions-v1.0.1...@mononxtest/type-definitions-v1.0.2) (2023-09-27)
+
+
+### Bug Fixes
+
+* extension js ([fe74041](https://github.com/devdanco/mono-dev/commit/fe74041b25dd94592ac60f719bdafd9ff9c64c41))
+
 ## [1.0.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/type-definitions-v1.0.0...@mononxtest/type-definitions-v1.0.1) (2023-09-27)
 
 
