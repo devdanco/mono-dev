@@ -1,4 +1,4 @@
-name: type-definitions
+name: pre-release
 
 on:
   push:
