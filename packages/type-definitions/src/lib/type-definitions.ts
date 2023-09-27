@@ -212,7 +212,7 @@ export const mRpc = {
             type: "Vec<RpcAssetMetadata<TokenId>>"
         },
         get_liq_tokens_for_trading: {
-            description: "",
+            description: "liq tokens",
             params: [],
             type: "Vec<TokenId>"
         }
