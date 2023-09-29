@@ -1,0 +1,27 @@
+{
+  "name": "@mononxtest/types",
+  "version": "1.0.0-rc.1",
+  "dependencies": {
+    "@swc/helpers": "0.5.2"
+  },
+  "devDependencies": {
+    "@mononxtest/type-definitions": "1.1.1"
+  },
+  "peerDependencies": {
+    "@polkadot/types": "10.9.1"
+  },
+  "type": "module",
+  "module": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "private": false
+}

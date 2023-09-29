@@ -1,0 +1,54 @@
+{
+  "name": "@mononxtest/types",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/types",
+        "main": "packages/types/src/index.ts",
+        "tsConfig": "packages/types/tsconfig.lib.json",
+        "assets": ["packages/types/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/types/**/*.ts"
+        ]
+      }
+    },
+    "build-types": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx tsx node_modules/.bin/polkadot-types-from-defs --package @mononxtest/types/interfaces --input packages/types/src/interfaces --endpoint packages/types/metadata.json",
+          "npx tsx node_modules/.bin/polkadot-types-from-chain --package @mononxtest/types/interfaces --endpoint packages/types/metadata.json --output packages/types/src/interfaces"
+        ],
+        "parallel": false
+      }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "branches": [
+          "main",
+          { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
+        ],
+        "buildTarget": "@mononxtest/types:build",
+        "repositoryUrl": "https://github.com/devdanco/mono-dev",
+        "outputPath": "dist/packages/types",
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "${PROJECT_NAME}-v${version}"
+      }
+    }
+  },
+  "tags": []
+}
