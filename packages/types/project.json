@@ -19,8 +19,7 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "packages/types/**/*.ts",
-          "packages/types/package.json"
+          "packages/types/**/*.ts"
         ]
       }
     },
