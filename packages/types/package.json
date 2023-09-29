@@ -1,0 +1,22 @@
+{
+  "name": "@mononxtest/types",
+  "version": "0.0.1",
+  "dependencies": {
+    "@swc/helpers": "0.5.2",
+    "@mangata-finance/type-definitions": "1.0.0"
+  },
+  "type": "module",
+  "module": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "private": false
+}
