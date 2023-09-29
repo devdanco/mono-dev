@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "@swc/helpers": "0.5.2",
-    "@mangata-finance/type-definitions": "1.0.0"
+    "@mononxtest/type-definitions": "1.1.1",
+    "@polkadot/types": "10.9.1",
+    "@polkadot/types-codec": "10.9.1"
   },
   "type": "module",
   "module": "./src/index.js",
