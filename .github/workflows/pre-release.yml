@@ -8,6 +8,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      affected: ${{ steps.set-output.outputs.affected }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -16,9 +18,17 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx affected -t lint
+      - name: Identify affected projects
+        run: |
+          echo "AFFECTED=$(nx show projects --affected --json | jq -r '.projects | join(" ")')" >> $GITHUB_ENV
 
-      - run: npx nx affected -t semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Set affected projects as output
+        id: set-output
+        run: echo "::set-output name=affected::${{ env.AFFECTED }}"
+
+#      - run: npx nx affected -t lint
+#
+#      - run: npx nx affected -t semantic-release
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
