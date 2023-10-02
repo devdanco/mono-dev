@@ -24,7 +24,12 @@ jobs:
 
       - name: Set affected projects as output
         id: set-output
-        run: echo "::set-output name=affected::${{ env.AFFECTED }}"
+        run: echo "${{ env.AFFECTED }}"
+
+      - name: Conditional Step - Only run if AFFECTED contains @mononxtest/sdk
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        run: |
+          # This step will only run if env.AFFECTED contains '@mononxtest/sdk'
 
 #      - run: npx nx affected -t lint
 #
