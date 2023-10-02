@@ -20,7 +20,7 @@ jobs:
 
       - name: Identify affected projects
         run: |
-          echo "AFFECTED=$(npx nx show projects --affected --json | jq -r '.projects | join(" ")')" >> $GITHUB_ENV
+          echo "AFFECTED=$(npx nx show projects --affected --json | jq -r '. | join(" ")')" >> $GITHUB_ENV
 
       - name: Set affected projects as output
         id: set-output
