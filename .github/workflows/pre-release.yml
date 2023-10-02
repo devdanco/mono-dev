@@ -61,9 +61,14 @@ jobs:
           docker-compose up -d --build
           docker ps
 
-#      - run: npx nx affected -t lint
-#
-#      - run: npx nx affected -t semantic-release
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npx nx affected -t lint
+
+      - name: Run the sdk tests
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        run: npx nx test @mononxtest/sdk
+
+
+      - run: npx nx affected -t semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
