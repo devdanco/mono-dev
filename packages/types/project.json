@@ -27,8 +27,8 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "npx tsx node_modules/.bin/polkadot-types-from-defs --package @mononxtest/types/interfaces --input packages/types/src/interfaces --endpoint packages/types/metadata.json",
-          "npx tsx node_modules/.bin/polkadot-types-from-chain --package @mononxtest/types/interfaces --endpoint packages/types/metadata.json --output packages/types/src/interfaces"
+          "npx esno node_modules/.bin/polkadot-types-from-defs --package @mononxtest/types/interfaces --input packages/types/src/interfaces --endpoint packages/types/metadata.json",
+          "npx esno node_modules/.bin/polkadot-types-from-chain --package @mononxtest/types/interfaces --endpoint packages/types/metadata.json --output packages/types/src/interfaces"
         ],
         "parallel": false
       }

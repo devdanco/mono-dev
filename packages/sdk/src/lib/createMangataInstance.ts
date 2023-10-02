@@ -1,6 +1,6 @@
 import {getOrCreateInstance} from "./getOrCreateInstance.js";
-import {getNodeVersion} from "./getNodeVersion.js";
 import {ApiPromise} from "@polkadot/api";
+import {getNodeVersion} from "./getNodeVersion.js";
 
 export type MangataInstance = {
     api: () => Promise<ApiPromise>;
@@ -15,7 +15,7 @@ export function createMangataInstance(urls: string[]): MangataInstance {
     return {
         api:  () => instancePromise,
         rpc: {
-            getNodeVersion:  () =>  getNodeVersion(instancePromise)
+            getNodeVersion:  () =>  getNodeVersion(instancePromise),
         }
     }
 }
