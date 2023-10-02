@@ -28,9 +28,6 @@
     },
     "test": {
       "inputs": ["default", "^default"]
-    },
-    "build": {
-      "inputs": ["default", "^default"]
     }
   }
 }

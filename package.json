@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "devDependencies": {
+    "@goestav/nx-semantic-release": "^1.0.0",
     "@nx/eslint-plugin": "16.8.1",
     "@nx/js": "16.8.1",
     "@nx/linter": "16.8.1",

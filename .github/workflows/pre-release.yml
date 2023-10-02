@@ -18,54 +18,54 @@ jobs:
 
       - run: npm ci
 
-#      - name: Identify affected projects
-#        run: |
-#          echo "AFFECTED=$(npx nx show projects --affected --json | jq -r '. | join(" ")')" >> $GITHUB_ENV
-#
-#      - name: Clone mangata node repository
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        uses: actions/checkout@v3
-#        with:
-#          repository: mangata-finance/mangata-node
-#          path: mangata-repo
-#          ref: develop
+      - name: Identify affected projects
+        run: |
+          echo "AFFECTED=$(npx nx show projects --affected --json | jq -r '. | join(" ")')" >> $GITHUB_ENV
 
-#      - name: Setup Node version and cache dependencies
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version: "18"
-#          cache: "npm"
+      - name: Clone mangata node repository
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        uses: actions/checkout@v3
+        with:
+          repository: mangata-finance/mangata-node
+          path: mangata-repo
+          ref: develop
 
-#      - name: Install WASM toolchain
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        uses: actions-rs/toolchain@v1
-#        with:
-#          toolchain: nightly
-#          target: wasm32-unknown-unknown
+      - name: Setup Node version and cache dependencies
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
 
-#      - name: Replace parachain docker image reference in config
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        working-directory: mangata-repo/devops/parachain-launch
-#        run: sed -i 's+mangatasolutions/mangata-node:.*+mangatasolutions/mangata-node:develop-fast+g' config.yml
-#
-#      - name: Generate the config
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        working-directory: mangata-repo/devops/parachain-launch
-#        run: npx @open-web3/parachain-launch generate config.yml
+      - name: Install WASM toolchain
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+          target: wasm32-unknown-unknown
 
-#      - name: Run the Node
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        working-directory: mangata-repo/devops/parachain-launch/output
-#        run: |
-#          docker-compose up -d --build
-#          docker ps
+      - name: Replace parachain docker image reference in config
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        working-directory: mangata-repo/devops/parachain-launch
+        run: sed -i 's+mangatasolutions/mangata-node:.*+mangatasolutions/mangata-node:develop-fast+g' config.yml
+
+      - name: Generate the config
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        working-directory: mangata-repo/devops/parachain-launch
+        run: npx @open-web3/parachain-launch generate config.yml
+
+      - name: Run the Node
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        working-directory: mangata-repo/devops/parachain-launch/output
+        run: |
+          docker-compose up -d --build
+          docker ps
 
       - run: npx nx affected -t lint
 
-#      - name: Run the sdk tests
-#        if: contains(env.AFFECTED, '@mononxtest/sdk')
-#        run: npx nx test @mononxtest/sdk
+      - name: Run the sdk tests
+        if: contains(env.AFFECTED, '@mononxtest/sdk')
+        run: npx nx test @mononxtest/sdk
 
 
       - run: npx nx affected -t semantic-release
