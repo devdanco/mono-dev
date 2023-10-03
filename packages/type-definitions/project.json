@@ -1,5 +1,5 @@
 {
-  "name": "type-definitions",
+  "name": "@mononxtest/type-definitions",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/type-definitions/src",
   "projectType": "library",
@@ -21,6 +21,22 @@
         "lintFilePatterns": [
           "packages/type-definitions/**/*.ts"
         ]
+      }
+    },
+    "semantic-release": {
+      "executor": "@goestav/nx-semantic-release:semantic-release",
+      "options": {
+        "branches": [
+          "main",
+          { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
+        ],
+        "buildTarget": "@mononxtest/type-definitions:build",
+        "repositoryUrl": "https://github.com/devdanco/mono-dev",
+        "outputPath": "dist/packages/type-definitions",
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "${PROJECT_NAME}-v${version}"
       }
     }
   },
