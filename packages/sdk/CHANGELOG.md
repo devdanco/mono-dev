@@ -1,3 +1,10 @@
+## [1.5.1-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.5.0...@mononxtest/sdk-v1.5.1-rc.1) (2023-10-03)
+
+
+### Bug Fixes
+
+* **types:** cool ([e220143](https://github.com/devdanco/mono-dev/commit/e2201431c9e845331011df2624e4d8a915346c76))
+
 # [1.5.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.4.0...@mononxtest/sdk-v1.5.0) (2023-10-03)
 
 
