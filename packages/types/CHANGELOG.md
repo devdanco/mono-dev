@@ -1,3 +1,10 @@
+# [1.6.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.5.1-rc.2...@mononxtest/types-v1.6.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* **sdk:** jjj ([36fa974](https://github.com/devdanco/mono-dev/commit/36fa97417a70cf99971dc88a39a004a9d185eda6))
+
 ## [1.5.1-rc.2](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.5.1-rc.1...@mononxtest/types-v1.5.1-rc.2) (2023-10-03)
 
 
