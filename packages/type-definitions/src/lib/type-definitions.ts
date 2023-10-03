@@ -46,7 +46,7 @@ export const mRpc = {
     },
     calculate_sell_price: {
       description:
-          "Calculates and returns bought_token_amount while providing sold_token_amount and respective reserves",
+          "Calculates fdfdfds and returns bought_token_amount while providing sold_token_amount and respective reserves",
       params: [
         {
           name: "input_reserve",
