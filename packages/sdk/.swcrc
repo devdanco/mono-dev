@@ -21,6 +21,9 @@
   },
   "sourceMaps": true,
   "exclude": [
+    "vite.config.ts",
+    ".*\\.spec.tsx?$",
+    ".*\\.test.tsx?$",
     ".*.js$"
   ]
 }

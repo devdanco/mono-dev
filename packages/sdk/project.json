@@ -1,17 +1,17 @@
 {
-  "name": "@mononxtest/types",
+  "name": "@mononxtest/sdk",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/types/src",
+  "sourceRoot": "packages/sdk/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:swc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/types",
-        "main": "packages/types/src/index.ts",
-        "tsConfig": "packages/types/tsconfig.lib.json",
-        "assets": ["packages/types/*.md"]
+        "outputPath": "dist/packages/sdk",
+        "main": "packages/sdk/src/index.ts",
+        "tsConfig": "packages/sdk/tsconfig.lib.json",
+        "assets": ["packages/sdk/*.md"]
       }
     },
     "lint": {
@@ -19,18 +19,16 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "packages/types/**/*.ts"
+          "packages/sdk/**/*.ts"
         ]
       }
     },
-    "build-types": {
-      "executor": "nx:run-commands",
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "commands": [
-          "npx esno node_modules/.bin/polkadot-types-from-defs --package @mononxtest/types/interfaces --input packages/types/src/interfaces --endpoint packages/types/metadata.json",
-          "npx esno node_modules/.bin/polkadot-types-from-chain --package @mononxtest/types/interfaces --endpoint packages/types/metadata.json --output packages/types/src/interfaces"
-        ],
-        "parallel": false
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/sdk"
       }
     },
     "semantic-release": {
@@ -40,9 +38,9 @@
           "main",
           { "name": "rc/*", "channel": "rc", "prerelease": "rc" }
         ],
-        "buildTarget": "@mononxtest/types:build",
+        "buildTarget": "@mononxtest/sdk:build",
         "repositoryUrl": "https://github.com/devdanco/mono-dev",
-        "outputPath": "dist/packages/types",
+        "outputPath": "dist/packages/sdk",
         "github": true,
         "changelog": true,
         "npm": true,

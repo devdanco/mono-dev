@@ -1,15 +1,15 @@
 {
-  "name": "@mononxtest/types",
-  "version": "1.1.0-rc.1",
-  "dependencies": {
-    "@swc/helpers": "0.5.2"
+  "name": "@mononxtest/sdk",
+  "version": "1.0.0-rc.2",
+  "peerDependencies": {
+    "@polkadot/api": "10.9.1"
   },
   "devDependencies": {
-    "@polkadot/typegen": "10.9.1",
-    "@mononxtest/type-definitions": "1.1.1"
+    "@mononxtest/types": "1.0.0"
   },
-  "peerDependencies": {
-    "@polkadot/types": "10.9.1"
+  "dependencies": {
+    "@swc/helpers": "~0.5.0",
+    "@mononxtest/type-definitions": "1.1.1"
   },
   "type": "module",
   "module": "./src/index.js",
