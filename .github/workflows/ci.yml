@@ -1,11 +1,9 @@
-name: Types CI
+name: CI
 
 on:
   push:
     branches:
-      - 'rc/types-*'
-    paths:
-      - packages/types/**
+      - 'rc/*'
 
 jobs:
   release:
@@ -18,9 +16,9 @@ jobs:
 
       - run: npm ci
 
-      - run: npx nx lint @mononxtest/types
+      - run: npx nx affected -t lint
 
-      - run: npx nx semantic-release @mononxtest/types --parallel=false
+      - run: npx nx affected -t semantic-release --parallel=false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
