@@ -1,4 +1,3 @@
-import "@mononxtest/types"
 import {createMangataInstance} from "./createMangataInstance.js";
 
 
