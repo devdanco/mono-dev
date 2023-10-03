@@ -1,6 +1,6 @@
 {
   "name": "@mononxtest/sdk",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0",
   "peerDependencies": {
     "@polkadot/api": "10.9.1"
   },
