@@ -7,15 +7,15 @@
       }
     }
   },
-  "pluginsConfig": {
-    "@nx/js": {
-      "analyzeSourceFiles": true
-    }
-  },
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "workspaceLayout": {
     "projectNameAndRootFormat": "as-provided"
+  },
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
+    }
   },
   "targetDefaults": {
     "lint": {
