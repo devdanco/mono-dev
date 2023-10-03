@@ -2,6 +2,6 @@
 
 This library was generated with [Nx](https://nx.dev).
 
-## Building
+## Building cool
 
 Run `nx build type-definitions` to build the library.

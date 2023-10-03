@@ -1,3 +1,10 @@
+# [1.8.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.7.0...@mononxtest/sdk-v1.8.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* **type-definitions:** a ([97a8e0e](https://github.com/devdanco/mono-dev/commit/97a8e0ee2cbc2a5a50005ccce4e7951e1d542df3))
+
 # [1.7.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.6.0...@mononxtest/sdk-v1.7.0) (2023-10-03)
 
 
