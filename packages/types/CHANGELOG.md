@@ -1,3 +1,10 @@
+## [1.5.1-rc.2](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.5.1-rc.1...@mononxtest/types-v1.5.1-rc.2) (2023-10-03)
+
+
+### Bug Fixes
+
+* **sdk:** a ([133cf6a](https://github.com/devdanco/mono-dev/commit/133cf6a68fd9eefcabfcc8d624170855e6f5067f))
+
 ## [1.5.1-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.5.0...@mononxtest/types-v1.5.1-rc.1) (2023-10-03)
 
 
