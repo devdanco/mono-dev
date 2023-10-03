@@ -1,3 +1,10 @@
+# [1.9.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.8.0...@mononxtest/types-v1.9.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* huhu ([3c006cc](https://github.com/devdanco/mono-dev/commit/3c006ccc15cdbc6d95fadcf716dc8ae266c3f34f))
+
 # [1.8.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.7.0...@mononxtest/types-v1.8.0) (2023-10-03)
 
 
