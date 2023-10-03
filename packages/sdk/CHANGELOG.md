@@ -1,3 +1,10 @@
+# [1.9.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.8.0...@mononxtest/sdk-v1.9.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* **types:** hey ([bca881d](https://github.com/devdanco/mono-dev/commit/bca881d64bf01584eb9184994827edff22333b09))
+
 # [1.8.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.7.0...@mononxtest/sdk-v1.8.0) (2023-10-03)
 
 
