@@ -5,7 +5,7 @@ on:
     branches:
       - 'rc/types-*'
     paths:
-      - 'packages/types/**'
+      - packages/types/**
 
 jobs:
   release:
