@@ -1,3 +1,10 @@
+# [1.3.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.2.0...@mononxtest/types-v1.3.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* **types:** para ([a0e06b5](https://github.com/devdanco/mono-dev/commit/a0e06b5d47a8b47cf5c238b3e7ac6f2ce6adb4ee))
+
 # [1.2.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.1.0...@mononxtest/types-v1.2.0) (2023-10-03)
 
 
