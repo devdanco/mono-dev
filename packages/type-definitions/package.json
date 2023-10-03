@@ -1,11 +1,11 @@
 {
-  "name": "@mononxtest/sdk",
-  "version": "1.6.0",
-  "peerDependencies": {
-    "@polkadot/api": "10.9.1"
-  },
+  "name": "@mononxtest/type-definitions",
+  "version": "0.0.1",
   "dependencies": {
     "@swc/helpers": "~0.5.0"
+  },
+  "peerDependencies": {
+    "@polkadot/types": "10.9.1"
   },
   "type": "module",
   "module": "./src/index.js",

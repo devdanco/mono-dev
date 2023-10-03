@@ -2,7 +2,7 @@
 
 This library was generated with [Nx](https://nx.dev).
 
-## Building
+## Building cool
 
 Run `nx build sdk` to build the library.
 
