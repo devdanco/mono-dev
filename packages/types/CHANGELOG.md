@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.6.0...@mononxtest/types-v1.7.0) (2023-10-03)
+
+
+### Features
+
+* **types:** cool ([7abf349](https://github.com/devdanco/mono-dev/commit/7abf349d42b3a23062ef6b3c84ddbae6cd2fbfe9))
+
 # [1.7.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.6.0...@mononxtest/types-v1.7.0-rc.1) (2023-10-03)
 
 
