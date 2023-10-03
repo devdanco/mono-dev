@@ -1,12 +1,11 @@
 {
   "name": "@mononxtest/types",
-  "version": "1.6.0",
+  "version": "1.7.0-rc.1",
   "dependencies": {
     "@swc/helpers": "0.5.2"
   },
   "devDependencies": {
-    "@polkadot/typegen": "10.9.1",
-    "@mononxtest/type-definitions": "1.1.1"
+    "@polkadot/typegen": "10.9.1"
   },
   "peerDependencies": {
     "@polkadot/types": "10.9.1"
