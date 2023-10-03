@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'rc/types-*'
+    paths:
+      - 'packages/types/**'
 
 jobs:
   release:
