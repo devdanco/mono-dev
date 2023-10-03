@@ -1,0 +1,26 @@
+name: default
+
+on:
+  push:
+    branches:
+      - 'rc/types-*'
+    paths:
+      - packages/types/**
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
+
+      - run: npm ci
+
+      - run: npx nx lint @mononxtest/types
+
+      - run: npx nx semantic-release @mononxtest/types --parallel=false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

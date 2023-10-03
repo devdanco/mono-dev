@@ -1,3 +1,17 @@
+# [1.4.0-rc.2](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.4.0-rc.1...@mononxtest/types-v1.4.0-rc.2) (2023-10-03)
+
+
+### Bug Fixes
+
+* **types:** readme ([d28548b](https://github.com/devdanco/mono-dev/commit/d28548bb16a17df4eb5145d52bf64cb66b65c6f6))
+
+# [1.4.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.3.0...@mononxtest/types-v1.4.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* **types:** cool ([681e7f2](https://github.com/devdanco/mono-dev/commit/681e7f23a68b8c06b60f64f813aa364b393ff870))
+
 # [1.3.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/types-v1.2.0...@mononxtest/types-v1.3.0) (2023-10-03)
 
 
