@@ -1,3 +1,10 @@
+# [1.1.0-rc.1](https://github.com/devdanco/mono-dev/compare/@mononxtest/sdk-v1.0.0...@mononxtest/sdk-v1.1.0-rc.1) (2023-10-03)
+
+
+### Features
+
+* **sdk:** add new method ([92ee355](https://github.com/devdanco/mono-dev/commit/92ee355e689d11719276a8b9166daa2e4a66be13))
+
 # 1.0.0 (2023-10-03)
 
 
