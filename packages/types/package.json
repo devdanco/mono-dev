@@ -5,7 +5,8 @@
     "@swc/helpers": "0.5.2"
   },
   "devDependencies": {
-    "@polkadot/typegen": "10.9.1"
+    "@polkadot/typegen": "10.9.1",
+    "@mononxtest/types": "1.8.0"
   },
   "peerDependencies": {
     "@polkadot/types": "10.9.1"
