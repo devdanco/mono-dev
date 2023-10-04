@@ -27,7 +27,7 @@ export const mRpc = {
   xyk: {
     calculate_buy_price: {
       description:
-          "Calculateaaaas and returns sold_token_amount while providing bought_token_amount and respective reserves",
+          "Calcs and returns sold_token_amount while providing bought_token_amount and respective reserves",
       params: [
         {
           name: "input_reserve",
