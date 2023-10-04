@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/type-definitions-v1.3.0...@mononxtest/type-definitions-v1.4.0) (2023-10-04)
+
+
+### Features
+
+* **type-definitions:** description ([358ebd9](https://github.com/devdanco/mono-dev/commit/358ebd9f5e03eb600270de9cf5f249d1910ba15f))
+
 # [1.3.0](https://github.com/devdanco/mono-dev/compare/@mononxtest/type-definitions-v1.2.0...@mononxtest/type-definitions-v1.3.0) (2023-10-03)
 
 
